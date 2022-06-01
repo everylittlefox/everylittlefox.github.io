@@ -29,9 +29,11 @@ github_username: everylittlefox
 logo: /img/logo.png
 
 # Build settings
-theme: jekyll-theme-persephone
+# theme: jekyll-theme-persephone
+remote_theme: erlzhang/jekyll-theme-persephone
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

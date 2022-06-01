@@ -1,3 +1,10 @@
+PATH
+  remote: theme/no-style-please
+  specs:
+    no-style-please (0.4.7)
+      jekyll (~> 3.9.0)
+      jekyll-feed (~> 0.15.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -176,7 +183,6 @@ GEM
     jekyll-theme-modernist (0.2.0)
       jekyll (> 3.5, < 5.0)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-persephone (0.3.3)
     jekyll-theme-primer (0.6.0)
       jekyll (> 3.5, < 5.0)
       jekyll-github-metadata (~> 2.9)
@@ -260,8 +266,7 @@ DEPENDENCIES
   github-pages (~> 226)
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
-  jekyll-theme-persephone
-  minima (~> 2.5)
+  no-style-please!
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

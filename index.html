@@ -28,13 +28,23 @@ layout: default
 </div>
 
 <section class="posts" id="Blog">
-    <h2>writing</h2>
+    {% for category in site.categories %}
+    {% assign name = category[0] %}
+    {% assign description = site.data.category_descriptions[name] %}
+    <h3>{{ name }}</h3>
+    {% if description %}
+    <p>{{ description }}</p>
+    {% endif %}
     <ul>
-        {% for post in site.posts %}
+        {% for post in category[1] %}
         <li>
+        {% if post.in_progress %}
+        <span>🚧</span>
+        {% endif %}
 		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         {% endfor %}
     </ul>
+    {% endfor %}
 </section>

@@ -327,15 +327,20 @@ b {
 .posts li {
 	align-items: center;
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 0.5rem;
 }
+
+.posts > h3 + p {
+  margin-bottom: 0.5rem;
+} 
 
 .posts li a,
 .posts li div,
 .projects li a {
 	white-space: nowrap;
 	overflow: hidden;
+  flex: 1;
+  margin-right: 1rem;
 	text-overflow: ellipsis;
 	font-weight: bold;
 }
@@ -347,6 +352,10 @@ b {
 	font-variant-numeric: tabular-nums;
 }
 
+.posts li span {
+  margin-right: 1rem;
+}
+
 time {
 	color: var(--main-text-color);
 }
@@ -355,6 +364,7 @@ time {
 	font-size: x-large;
 	margin-top: 3rem;
 	margin-bottom: 0;
+  text-transform: lowercase;
 }
 
 .post > time {

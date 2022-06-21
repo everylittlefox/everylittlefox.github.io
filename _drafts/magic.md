@@ -1,0 +1,6 @@
+# magic
+This is unlike anything I've ever written. I know the number of things I've written is small enough so that any new piece may be thought of as unlike anything I'd written previously. But this is different. It is not born out of a desire to understand an emotion, or what allowing a particular feeling to linger would mean. It is not sad. It is not full of despair. It is not a cry for help.
+
+The year is 2030, and I am fulfilled. I am making just enough money to live comfortably, by myself, in a preferrably rural area, with very little contact with the outside world. 
+
+How do I earn a living? This is tricky. In the years leading up to now, I built up a reputation in the tech community as an expert learner with an insatiable curiosity and an amazing throughput for quality work. What work? I read, draw conclusions, make connections and produce new knowledge. My interests cut across different (academic) fields and disciplines: AI Ethics, digital publishing, learning and cognition, etc. People see the benefit and possible impact of the work I do and they sponsor me--I am able to work independent of any supervisory body because of the donations of people.

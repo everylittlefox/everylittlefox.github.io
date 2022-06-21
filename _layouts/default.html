@@ -5,19 +5,6 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EP7KLCYVP"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag() { dataLayer.push(arguments); }
-   gtag('js', new Date());
-
-   gtag('config', 'G-3EP7KLCYVP');
- </script>
-
-
-
-
 <body>
   <main>
     {% include anchor_headings.html html=content anchorBody="#" %}
@@ -64,27 +51,9 @@ layout: compress
 <footer class="social-footer">
   <div class="social-footer-icons">
     <a href="https://github.com/everylittlefox" title="Github profile, nothing much there, yet" target="_blank"
-      rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="{{ '/atom.xml' | relative_url }}" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
-        class="fa fa-rss" aria-hidden="true"></i></a>
+      rel="noopener noreferrer">github</a>
+    <a href="{{ '/atom.xml' | relative_url }}" title="Feed RSS" target="_blank" rel="noopener noreferrer">rss</a>
   </div>
 </footer>
-
-
-{% if page.url == '/' %}
-  <script src="{{ '/assets/js/simple-jekyll-search.js' | relative_url }}"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-		      json: "{{ '/search.json' | relative_url }}",
-      searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
-  {% endif %}
-
 
 </html>
